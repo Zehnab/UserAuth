@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'protected_attributes'
 gem 'sqlite3-ruby'
 gem 'bcrypt-ruby'
 
@@ -9,6 +10,7 @@ gem 'rails', '4.0.0.rc1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'

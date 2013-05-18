@@ -1,16 +1,17 @@
 <h1>Signed Up</h1>
 
 <%= form_for @user do |f|%>
-	<% if @user.errors.any?%>
+	<% if @user.errors.any? %>
 	<div class="error_messages">
 		<h2>Form in invlaid</h2>
 		<ul>
-			<% for message in @user.errors.full_messages%>
-			<li<%=message %>></li>
+			<% for message in @user.errors.full_messages %>
+			<li><%= message %></li>
 			<%end%>
 		</ul>
 		</div>
 	<%end%>
+	
 	<p>
 		<%= f.label :email%> <br />
 		<%= f.text_field :email%> <br />
